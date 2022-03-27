@@ -136,9 +136,9 @@ def names():
             <title>Names</title>                
             </head>
             <body>
-                <h1>Names</h1>
-                <p><a href="{}">Chloe</a></p>
-                <p><a href="{}">Marley</a></p>
+                <h1><center>Names</center></h1>
+                <p><center><a href="{}">Chloe</a></center></p>
+                <p><center><a href="{}">Marley</a></center></p>
             </body>
         </html>
     """.format(url_chloe, url_marley)
@@ -155,13 +155,14 @@ def chloe_page():
         <body>
             <h1><center>This is me!</center></h1>
             <div style="background-color:#D8BFD8;color:black; padding:20px;">
-            <br>
+            <img src="static/photos/chloe.jpg" align="center">
             </div>
-            <img src="{{url_for('photos', filename='chloe.png')}}" align="middle"/>
+
             <br>
+            
             <h2><center>These are my favourite things</center></h2>
             
-            <table>
+            <table align="center">
                 <tr>
                     <th>Theme</th>
                     <th>Favourite</th>
@@ -201,15 +202,15 @@ def marley_page():
                 <title>Marley</title>
             </head>
         <body>
-            <h1>This is me!</h1>
+            <h1><center>This is me!</center></h1>
             <div style="background-color:#5DBB63;color:black; padding:20px;">
             <br>
             </div>
             <img src="marley.png"/>
             <br>
-            <h2>These are my favourite things</h2>
+            <h2><center>These are my favourite things</center></h2>
 
-            <table>
+            <table align="center">
                 <tr>
                     <th>Theme</th>
                     <th>Favourite</th>
